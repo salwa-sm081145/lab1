@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Patient Contact Information</title>
+</head>
+<body>
+<header>
+    <h1>Patient Contact Information</h1>
+</header>
+<form action="registration.html" method="get">
+    <fieldset>
+        <legend>Personal information</legend>
+        <label>First name:</label>
+        <input type="text" name="First name" value="" size="50" required><br>
+        <label>Last name:</label>
+        <input type="text" name="Last name" value="" size="50" required><br>
+        <label>Date of birth:</label>
+        <input type="date" name="Date of birth" value=""><br>
+        <label>Weight:</label>
+        1<input type="range" name="Weight" value="1">300 <label> selected value:1</label><br>
+        <lable>Gender</lable>
+        <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="female" name="gender">Female<br>
+        <label>No. of sibling: </label>
+        <input type="number" min="0" max="15" step="1">(0 to 15)<br>
+        <label for="employment">Employment:</label>
+        <select id="employment" name="employment" multiple size="10">
+            <optgroup label="Government">
+                <option label="Administrative" value="Administrative"></option>
+                <option label="Technical" value="Technical"></option>
+            </optgroup>
+            <optgroup label="private sector">
+                <option label="owner" value="owner"></option>
+                <option label="employee" value="employee"></option>
+            </optgroup>
+            <optgroup label="other"></optgroup>
+
+        </select>
+
+    </fieldset>
+    <fieldset>
+        <legend>Contact information></legend>
+        <label>Email:</label>
+        <input type="email"name="email">
+        <label>phone:</label>
+        <input type="number" name="phone"><br>
+        <label>preferred contact methods:</label><br>
+        <label>
+            <input type="checkbox" id="phone" name="pref" value="phone">by phone
+        </label><br>
+        <label>
+            <input type="checkbox" id="email" name="pref" value="email">by email
+        </label><br>
+        <label>
+            <input type="checkbox" id="mailing address" name="pref" value="mailing address">by mailing address
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Address information</legend>
+        <label>Address:</label>
+        <textarea name="area"></textarea><br>
+
+        <label>City:</label>
+        <input type="text" list="cities"><br>
+        <datalist id="cities">
+            <option value="doha"></option>
+            <option value="alwakra"></option>
+            <option value="alkhor"></option>
+        </datalist>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="qatar">Qatar</option>
+            <option value="kuwait">Kuwait</option>
+            <option value="bahrain">Bahrain</option>
+        </select>
+
+
+    </fieldset>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</form>
+</body>
+</html>
